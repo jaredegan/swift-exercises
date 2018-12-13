@@ -13,13 +13,20 @@ class Basics1: XCTestCase {
     /// Returns the sum of the two given integers.
     /// If the values are equal, this should return the triple their sum.
     func addIntegersAndMaybeTriple(x: Int, y: Int) -> Int {
-        // TODO
-        return 0
+        
+        if x == y {
+            return (x + y) * 3
+        }
+        
+    
+        return x + y
     }
 
     func test_addIntegersAndMaybeTriple() {
         XCTAssertEqual(addIntegersAndMaybeTriple(x: 1, y: 2), 3)
         XCTAssertEqual(addIntegersAndMaybeTriple(x: 2, y: 2), 12)
+        XCTAssertEqual(addIntegersAndMaybeTriple(x: 8, y: 2), 10)
+        XCTAssertEqual(addIntegersAndMaybeTriple(x: 8, y: 8), 48)
     }
 
     ////////////////////////////////////////////////////////////////////////////////
@@ -29,8 +36,13 @@ class Basics1: XCTestCase {
     /// Should return `true` if the sum of the two integers is 20,
     /// or if either of the given parameters is 20.
     func sumIsTwentyOrInputIsTwenty(x: Int, y: Int) -> Bool {
-        // TODO
-        return false
+        
+        if x + y == 20 || x == 20 || y == 20  {
+            return true
+        } else {
+            return false
+        }
+        
     }
 
     func test_sumIsTwentyOrInputIsTwenty() {
@@ -47,8 +59,12 @@ class Basics1: XCTestCase {
 
     /// Should return `true` if x or y is negative.
     func isAnyInputNegative(x: Int, y: Int) -> Bool {
-        // TODO
-        return false
+        
+        if x < 0 || y < 0 {
+            return true
+        } else  {
+            return false
+        }
     }
 
     func test_isAnyInputNegative() {
@@ -66,8 +82,16 @@ class Basics1: XCTestCase {
     /// Should return `true` if one of the inputs is negative and one is positive.
     /// If both are the same sign, you should return false
     func isThereBothNegativeAndPostive(x: Int, y: Int) -> Bool {
-        // TODO
-        return false
+        
+        let isSomethingNegative = x < 0 || y < 0
+        let isSomethingPositive = x >= 0 || y >= 0
+        
+        
+        if isSomethingNegative && isSomethingPositive {
+            return true
+        } else {
+            return false
+        }
     }
 
     func test_isThereBothNegativeAndPostive() {
@@ -82,11 +106,23 @@ class Basics1: XCTestCase {
     ////////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////////////
 
-    /// Return `true` if one of the inputs is included in the range 10...30
+    /// Return `true` if one of the inputs is included in the range 10...30 inclusive
     /// If both are the same sign, you should return false
     func isAnyInputInRange(x: Int, y: Int) -> Bool {
-        // TODO
-        return false
+
+        let isSomethingNegative = x < 0 && y < 0
+        let isSomethingPositive = x >= 0 && y >= 0
+        let isxInRange = x >= 10 && x <= 30
+        let isyInRange = y >= 10 && y <= 30
+
+
+        if isxInRange || isyInRange {
+            return true
+        }; if isSomethingPositive || isSomethingNegative  {
+            return false
+        } else {
+            return false
+        }
     }
 
     func test_isAnyInputInRange() {
@@ -96,6 +132,7 @@ class Basics1: XCTestCase {
         XCTAssertEqual(isAnyInputInRange(x: 20, y: -1), true)
         XCTAssertEqual(isAnyInputInRange(x: -20, y: 6), false)
         XCTAssertEqual(isAnyInputInRange(x: 31, y: 29), true)
+        XCTAssertEqual(isAnyInputInRange(x: -20, y: 10), true)
     }
 
     ////////////////////////////////////////////////////////////////////////////////
@@ -104,8 +141,14 @@ class Basics1: XCTestCase {
 
     /// Given 3 Ints, return the largest one
     func returnLargest(x: Int, y: Int, z: Int) -> Int {
-        // TODO
-        return 0
+        if x > y && x > z {
+            return x
+        }
+        if y > x && y > z {
+            return y
+        } else {
+            return z
+        }
     }
 
     func test_returnLargest() {
@@ -122,8 +165,14 @@ class Basics1: XCTestCase {
     /// Given 2 Ints, return the one closest to the number 10
     /// If they are equally as close, return the larger number
     func closestToTen(x: Int, y: Int) -> Int {
-        // TODO
-        return 0
+        if abs(x - 10) < abs(y - 10)  {
+            return x
+        } else if abs(x - 10) == abs(y - 10) {
+           return max(x,y)
+        }
+        else {
+            return y
+        }
     }
 
     func test_closestToTen() {
@@ -132,6 +181,7 @@ class Basics1: XCTestCase {
         XCTAssertEqual(closestToTen(x: 11, y: 8), 11)
         XCTAssertEqual(closestToTen(x: 8, y: 15), 8)
         XCTAssertEqual(closestToTen(x: 11, y: 9), 11)
+        XCTAssertEqual(closestToTen(x: 0, y: 20), 20)
     }
 
 
