@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB290E4D21C2B4D200F5D1E6 /* Loops1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB290E4C21C2B4D200F5D1E6 /* Loops1.swift */; };
+		FB290E4F21C2B5AA00F5D1E6 /* Arrays2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB290E4E21C2B5AA00F5D1E6 /* Arrays2.swift */; };
+		FB290E5121C2BCD000F5D1E6 /* Enums1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB290E5021C2BCD000F5D1E6 /* Enums1.swift */; };
 		FBB2A3F321ADB257009B1B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2A3F221ADB257009B1B93 /* AppDelegate.swift */; };
 		FBB2A3F521ADB257009B1B93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2A3F421ADB257009B1B93 /* ViewController.swift */; };
 		FBB2A3F821ADB257009B1B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB2A3F621ADB257009B1B93 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB290E4C21C2B4D200F5D1E6 /* Loops1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loops1.swift; sourceTree = "<group>"; };
+		FB290E4E21C2B5AA00F5D1E6 /* Arrays2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays2.swift; sourceTree = "<group>"; };
+		FB290E5021C2BCD000F5D1E6 /* Enums1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums1.swift; sourceTree = "<group>"; };
 		FBB2A3EF21ADB257009B1B93 /* SwiftExercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB2A3F221ADB257009B1B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB2A3F421ADB257009B1B93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 		FBB2A41221ADD37E009B1B93 /* 7 Loops */ = {
 			isa = PBXGroup;
 			children = (
+				FB290E4C21C2B4D200F5D1E6 /* Loops1.swift */,
 			);
 			path = "7 Loops";
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				FBB2A41A21ADDA4E009B1B93 /* Arrays1.swift */,
+				FB290E4E21C2B5AA00F5D1E6 /* Arrays2.swift */,
 			);
 			path = "3 Arrays";
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 		FBB2A41621ADD37E009B1B93 /* 6 Enums */ = {
 			isa = PBXGroup;
 			children = (
+				FB290E5021C2BCD000F5D1E6 /* Enums1.swift */,
 			);
 			path = "6 Enums";
 			sourceTree = "<group>";
@@ -261,6 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB2A41921ADD5ED009B1B93 /* Basics1.swift in Sources */,
+				FB290E4F21C2B5AA00F5D1E6 /* Arrays2.swift in Sources */,
+				FB290E5121C2BCD000F5D1E6 /* Enums1.swift in Sources */,
+				FB290E4D21C2B4D200F5D1E6 /* Loops1.swift in Sources */,
 				FBB2A41B21ADDA4E009B1B93 /* Arrays1.swift in Sources */,
 				FBB2A40821ADB25A009B1B93 /* SwiftExercisesTests.swift in Sources */,
 			);
